@@ -1,0 +1,252 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
+    border:0
+}
+/*start here*/
+body {
+  overflow-x: hidden; 
+  height: 100%; 
+}
+
+body{
+  font-family: tahoma;
+  background: linear-gradient(90deg, #3c6382, #82ccdd);
+margin: 0;
+padding: 0;
+}
+
+.header{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  background-color: #6f91db;
+  position: fixed; 
+  height: 60px !important;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.searchbox{
+  position: absolute;
+  border-radius: 40px;
+  right: 2%;
+  background: #2f3640;
+  height: 40px;
+  top: 15%;
+  padding: 0.1%;
+
+}
+
+.search-txt{
+  border: none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px; 
+
+}
+
+.search-btn{
+  color: #fc466b;
+  float:right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ transition: 0.4s;
+ text-decoration: none;
+}
+
+.searchbox:hover > .search-txt{
+  width: 500px;
+  padding: 0 6px;
+}
+
+.searchbox:hover > .search-btn{
+  background: white;
+}
+
+.main{
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  margin-top: 60px;
+}
+
+.mainInner{
+  display: table;
+   height: 100%;
+   width: 100%;
+   text-align: center;
+}
+
+#sidebarMenu{
+
+ height: 100%;
+ position: fixed;
+ left: 0;
+ width: 250px;
+ margin-top: 60px;
+ transform: translateX(-250px);
+ transition: transform 250ms ease-in-out;
+ background:linear-gradient(180deg, #fc466b, #3f5efb);
+
+}
+
+.siderbarMenuInner{
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+
+.siderbarMenuInner li{
+ list-style: none;
+ color: white;
+ text-transform: uppercase;
+ font-weight: bold;
+ padding: 20px;
+ cursor: pointer;
+ border-bottom: 1px solid rgba(255,255,255,0.10);
+ text-decoration: none;
+
+}
+.siderbarMenuInner li span{
+  display: block;
+  font-size: 14px;
+  color:rgba(255,255,255,0.50);
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.sidebarMenuInner li a{
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+input[type="checkbox"]:checked ~ #sidebarMenu{
+
+  transform: translateX(0);
+}
+input[type=checkbox]{
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+
+.sidebarIconToggle{
+
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width:100%;
+  top:22px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+}
+
+.spinner{
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+}
+
+.horizontal{
+   transition: all 0.3s;
+   box-sizing: border-box;
+   position: relative;
+   float: left;
+   margin-top: 3px;
+}
+
+.diagonal.part-1{
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float:left;
+}
+
+.diagonal.part-2{
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 3px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal{
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1{
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2{
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+/*end here*/
+body{
+    background: linear-gradient(#9193b8, #3f87a6);
+}
+header{
+    background-color: rgb(25, 120, 197);
+}
+#header-logo{
+    width:64px;
+    height:64px;
+}
+#header-msg{
+    font-size: 25px;
+    color: white;
+}
+#btnOne{
+    background-color:rgb(25, 120, 197);
+    color:white;
+}
+#btnOne:focus,#btnOne:hover{
+    box-shadow: none;
+    outline:none;
+}
+
+#tableHead{
+    background-color:rgb(25, 120, 197);
+}
+#searchInput{
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    border-bottom: 1px solid #ced4da;
+}
+#searchInput:hover,#searchInput:focus{
+    box-shadow: none;
+    outline:none;
+}
